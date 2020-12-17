@@ -1,0 +1,18 @@
+[package]
+name = "vonage-rust-sdk"
+version = "0.1.0"
+authors = ["slorello89 <slorello89@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.10", features = ["json", "blocking"] }
+tokio = { version = "0.2", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_urlencoded = { version="0.7" }
+hyper = "0.13.5"
+async-trait = "0.1.42"
+dotenv = "0.15.0"
+dotenv_codegen = "0.15.0"
+clap = "*"
